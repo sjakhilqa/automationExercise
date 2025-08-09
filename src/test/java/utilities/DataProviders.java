@@ -17,7 +17,7 @@ public class DataProviders {
 		int totalrows = xldata.getRowCount("Sheet1");     // e.g. 4 rows (0 to 3, with header)
 		int totalcols = xldata.getCellCount("Sheet1", 1); // assume 3 columns
 
-		String[][] loginData = new String[totalrows - 1][totalcols]; // remove header
+		String[][] loginData = new String[totalrows-1][totalcols]; // remove header
 
 		for (int i = 1; i <totalrows; i++) { // i starts from 1 to skip header
 			for (int j = 0; j < totalcols; j++) {

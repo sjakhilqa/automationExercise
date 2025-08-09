@@ -11,6 +11,7 @@ package testCases;
 import java.util.Set;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -21,6 +22,8 @@ import pageObjects.LandingPage;
 import pageObjects.LoginPage;
 import testBase.BaseClass;
 import utilities.DataProviders;
+
+@Listeners(utilities.ExtentReportManager.class)
 
 public class TC_002_LoginDDTValidations extends BaseClass {
 

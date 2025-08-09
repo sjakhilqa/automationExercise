@@ -3,6 +3,7 @@ package testCases;
 import java.util.Set;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageObjects.HomePage;
@@ -10,6 +11,7 @@ import pageObjects.LandingPage;
 import pageObjects.LoginPage;
 import testBase.BaseClass;
 
+@Listeners(utilities.ExtentReportManager.class)
 public class TC_001_ValidLogin extends BaseClass{
 	
 	@Test

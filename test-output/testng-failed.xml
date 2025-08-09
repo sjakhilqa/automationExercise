@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="loginDDT"/>
+          <include name="loginDDT" invocation-numbers="2"/>
         </methods>
       </class> <!-- testCases.TC_002_LoginDDTValidations -->
     </classes>
